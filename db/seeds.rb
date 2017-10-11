@@ -19,7 +19,17 @@ unless Rails.env.development?
   exit 0
 end
 
-# Let's do this ...
+## USERS
+
+for i in 1..100 do
+  User.create!({
+    first_name:  Faker::Name.unique.first_name,
+    last_name: Faker::Name.unique.last_name,
+    email: Faker::Internet.unique.email,
+    password_digest:
+    '$2a$06$btDYonx4yCJgY3YfHJ8pIOaHALN0BRjEvhQuQqJTwTSFLLv7UNv7i' #password
+  })
+end
 
 ## CATEGORIES
 
