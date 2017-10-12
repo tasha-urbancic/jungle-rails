@@ -4,7 +4,6 @@ class OrdersController < ApplicationController
 
   def show
     @order = Order.find(params[:id])
-    @current_user = User.find_by_email(params[:email])
     @items = LineItem.where(order_id: @order.id)
   end
 
