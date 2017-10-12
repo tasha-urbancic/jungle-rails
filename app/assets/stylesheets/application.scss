@@ -10,3 +10,14 @@
 body {
   padding-top: 70px;
 }
+
+ul.nav.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#777;
+}
+
+// form {
+//   display: inline-block;
+// }
