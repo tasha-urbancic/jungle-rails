@@ -21,7 +21,7 @@ end
 
 ## USERS
 
-for i in 1..100 do
+for i in 1..5 do
   User.create!({
     first_name:  Faker::Name.unique.first_name,
     last_name: Faker::Name.unique.last_name,
