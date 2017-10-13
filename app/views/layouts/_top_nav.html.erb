@@ -19,7 +19,7 @@
 
         <% if current_user %>
           <li>            
-            <%=current_user.first_name%> <%=current_user.last_name%>:
+            <%=current_user.first_name.titleize%> <%=current_user.last_name.titleize%>:
           </li>
           <li>
             <%= link_to 'Logout', logout_path %>

@@ -18,6 +18,13 @@ ul.nav.navbar-nav {
   color:#777;
 }
 
-// form {
-//   display: inline-block;
-// }
+.panel {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.review-rating,
+.btn.btn-info {
+  vertical-align: middle
+}
