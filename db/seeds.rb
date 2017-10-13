@@ -142,5 +142,19 @@ cat3.products.create!({
   price: 2_483.75
 })
 
+# create a review for each product
+Review.create!(product_id: 1, user_id: 1, rating: 5, description: 'Very great product');
+Review.create!(product_id: 2, user_id: 2, rating: 2, description: 'Very great product');
+Review.create!(product_id: 3, user_id: 3, rating: 3, description: 'Very great product');
+Review.create!(product_id: 4, user_id: 4, rating: 1, description: 'Very great product');
+Review.create!(product_id: 5, user_id: 5, rating: 5, description: 'Very great product');
+Review.create!(product_id: 6, user_id: 1, rating: 2, description: 'Very great product');
+Review.create!(product_id: 7, user_id: 2, rating: 3, description: 'Very great product');
+Review.create!(product_id: 8, user_id: 3, rating: 1, description: 'Very great product');
+Review.create!(product_id: 9, user_id: 4, rating: 5, description: 'Very great product');
+Review.create!(product_id: 10, user_id: 5, rating: 2, description: 'Very great product');
+Review.create!(product_id: 11, user_id: 1, rating: 3, description: 'Very great product');
+Review.create!(product_id: 12, user_id: 2, rating: 1, description: 'Very great product');
+
 
 puts "DONE!"
