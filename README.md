@@ -24,10 +24,10 @@ A mini e-commerce application built with Rails 4.2.
 ## Screenshots
 
 Home Page:
-![“Products”]()
+![“Products”](https://github.com/tasha-urbancic/jungle-rails/blob/master/docs/products.png?raw=true)
 
 Shopping Cart:
-![“Cart”]()
+![“Cart”](https://github.com/tasha-urbancic/jungle-rails/blob/master/docs/cart.png?raw=true)
 
 Product Reviews:
-![“Reviews”]()
+![“Reviews”](https://github.com/tasha-urbancic/jungle-rails/blob/master/docs/reviews.png?raw=true)
