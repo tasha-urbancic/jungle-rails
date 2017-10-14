@@ -3,8 +3,8 @@
 A mini e-commerce application built with Rails 4.2.
 
 
-## Setup
-
+## Getting Started
+```
 1. Fork & Clone
 2. Run `bundle install` to install dependencies
 3. Create `config/database.yml` by copying `config/database.example.yml`
@@ -14,12 +14,14 @@ A mini e-commerce application built with Rails 4.2.
 7. Sign up for a Stripe account
 8. Put Stripe (test) keys into appropriate .env vars
 9. Run `bin/rails s -b 0.0.0.0` to start the server
+```
 
 ## Dependencies
-
+```
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+```
 
 ## Screenshots
 
