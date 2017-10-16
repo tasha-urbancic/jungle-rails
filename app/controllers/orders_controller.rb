@@ -11,10 +11,11 @@ class OrdersController < ApplicationController
     charge = perform_stripe_charge
     @order  = create_order(charge)
     @current_user = current_user
+    @items = LineItem.where(order_id: @order.id)
 
     if @order.valid?
       empty_cart!
-      UserMailer.order_email(@order, @current_user).deliver_now
+      UserMailer.order_email(@order, @current_user, @items).deliver_now
       redirect_to @order, notice: 'Your Order has been placed.'
     else
       redirect_to cart_path, flash: { error: @order.errors.full_messages.first }

@@ -4,6 +4,7 @@
       <%= image_tag product.image.thumb, alt: product.name %>
       <h4><%= product.name %></h4>
     <% end %>
+    <h6>Average Rating:  <%=Product.averageRating(product)%>/5</h6>
   </header>
   <p class="description">
     <%= product.description %>

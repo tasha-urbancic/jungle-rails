@@ -9,5 +9,4 @@ class ProductsController < ApplicationController
     @review = Review.new
   end
 
-
 end

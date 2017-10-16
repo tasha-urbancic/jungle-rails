@@ -11,4 +11,18 @@ class Product < ActiveRecord::Base
   validates :quantity, presence: true
   validates :category, presence: true
 
+  def self.averageRating(product)
+    number_of_reviews = product.reviews.count
+    if number_of_reviews == 0
+      'Not Yet Rated'
+    else
+      tot = 0
+      product.reviews.each do |review|
+        p review.rating.to_i
+        tot = tot + review.rating.to_i
+      end
+      tot/number_of_reviews
+    end
+  end
+
 end
