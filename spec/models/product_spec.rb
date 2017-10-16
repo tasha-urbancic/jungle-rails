@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Product, type: :model do
   describe 'Validations' do
 
-    it('should not be invalid with all four fields') do
+    it('should be valid with all four fields') do
       category = Category.create!(name: 'shirts')
       product = Product.create!(name: 'name', price: 99.99, quantity: 3, category: category)
 
